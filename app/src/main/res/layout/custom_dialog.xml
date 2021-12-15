@@ -1,0 +1,30 @@
+<RelativeLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Value"
+            android:id="@+id/enter_value"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp" android:layout_alignParentTop="true"/>
+    <Button
+            android:text="OK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ok_button"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/enter_value"
+            android:layout_marginRight="0dp" android:layout_marginEnd="0dp"
+            android:layout_alignRight="@+id/enter_value" android:layout_alignEnd="@+id/enter_value"/>
+    <Button
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:id="@+id/cancel_btn" android:layout_marginTop="30dp" android:layout_marginLeft="0dp"
+            android:layout_below="@+id/enter_value" android:layout_alignLeft="@+id/enter_value"
+            android:layout_alignStart="@+id/enter_value"/>
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+
+        android:layout_width="wrap_content">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/item_design"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp">
+
+        <TextView
+                android:text="0"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_toEndOf="@+id/value_icon"
+                android:layout_marginStart="10dp"
+                android:id="@+id/Value_txt"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp" android:textSize="22sp" android:layout_toRightOf="@+id/value_icon"/>
+        <TextView
+                android:text="0"
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:id="@+id/Count_value"
+                android:layout_marginLeft="10dp"
+                android:textSize="22sp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/count_icon" android:layout_toRightOf="@+id/count_icon"/>
+        <ImageButton
+                android:layout_width="25dp"
+                android:layout_height="25dp" app:srcCompat="@drawable/plus_icon"
+                android:layout_marginEnd="14dp" android:id="@+id/Add_btn"
+                android:layout_marginRight="14dp"
+                android:layout_toStartOf="@+id/Delete_btn" android:layout_toLeftOf="@+id/Delete_btn"
+                android:layout_marginBottom="0dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/custom_button"/>
+        <ImageButton
+                android:layout_width="25dp"
+                android:layout_height="25dp" app:srcCompat="@drawable/minus_icon"
+                android:layout_alignParentRight="true" android:layout_alignParentEnd="true"
+                android:layout_marginEnd="9dp" android:id="@+id/Delete_btn"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="9dp" android:background="@drawable/custom_button"/>
+        <TextView
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:id="@+id/result_txt"
+                android:layout_toEndOf="@+id/total_icon"
+                android:layout_centerVertical="true" android:layout_toRightOf="@+id/total_icon"
+                android:layout_marginLeft="10dp" android:textSize="22sp" android:layout_marginStart="10dp"/>
+        <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/v_icon" android:id="@+id/value_icon"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp" android:layout_alignParentStart="true"
+                android:layout_marginStart="5dp"/>
+        <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp" app:srcCompat="@drawable/c_icon"
+                android:layout_toEndOf="@+id/Value_txt"
+                android:id="@+id/count_icon" android:layout_toRightOf="@+id/Value_txt"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true" android:layout_marginStart="15dp"/>
+        <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp" app:srcCompat="@drawable/total_icon" android:id="@+id/total_icon"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/Count_value"
+                android:layout_marginLeft="5dp" android:layout_toRightOf="@+id/Count_value"
+                android:layout_marginStart="5dp"/>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/Delete_all_items" android:icon="@drawable/ic_delete_all"
+          app:showAsAction="always" android:title="deleteAll"/>
+    <item android:id="@+id/Reset_all_items" android:icon="@drawable/ic_reset" app:showAsAction="always"
+      android:title="reset"/>
+    <item android:id="@+id/Add_new_item" android:icon="@drawable/ic_add_new"
+          app:showAsAction="always" android:title="Add"/>
+
+
+</menu>

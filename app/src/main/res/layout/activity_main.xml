@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:id="@+id/List_items_view" android:layout_above="@+id/Time_view" android:layout_marginBottom="0dp"/>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/Time_view"
+            android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="25dp" android:layout_height="25dp"
+                   android:id="@+id/cars_icon"
+                   android:src="@drawable/cars_icon"
+                   android:layout_marginLeft="30dp"
+                   android:layout_marginStart="30dp"/>
+
+        <TextView
+                android:layout_width="100dp" android:layout_height="wrap_content"
+                  android:textSize="18sp" android:layout_centerVertical="true"
+                  android:id="@+id/cars_total"
+                  android:text="0"
+                  android:layout_toEndOf="@id/cars_icon" android:layout_marginLeft="15dp"
+                  android:layout_toRightOf="@id/cars_icon"/>
+
+        <ImageView android:layout_width="25dp"
+                   android:layout_height="25dp"
+                   android:src="@drawable/s_total_icon"
+                   android:id="@+id/s_total_icon"
+                   android:layout_toEndOf="@+id/cars_total"
+                   android:layout_marginLeft="15dp"
+                   android:layout_toRightOf="@+id/cars_total"/>
+
+        <TextView
+                android:layout_width="100dp" android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:id="@+id/s_total"
+                android:text="0"
+                android:layout_centerVertical="true"
+                 android:layout_marginLeft="15dp"
+                 android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/s_total_icon"
+                android:layout_toRightOf="@+id/s_total_icon"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
